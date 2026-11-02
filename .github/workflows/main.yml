@@ -20,9 +20,12 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: ./GIT_PR10_antonyuk
       
     - name: Build
       run: dotnet build --no-restore
+      working-directory: ./GIT_PR10_antonyuk
       
     - name: Run
       run: dotnet run --no-build
+      working-directory: ./GIT_PR10_antonyuk
